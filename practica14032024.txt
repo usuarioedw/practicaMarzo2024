@@ -1,0 +1,22 @@
+$mysqli=new mysqli('host','user','passw','bd');
+
+$stmt=$mysqli->prepare("INSERT...VALUES (?,?,?,?)");
+$stmt->bind_param('types',$v1,..$vetc);
+
+$v=....
+
+$stmt->execute();
+
+$mysqli->query("DELETE....");
+	$mysqli->affected_rows
+
+$mysqli->close();
+
+--------------------------------------------
+if($resultado=$mysqli->query($consulta)){
+	while($fila=$resultado->fetch_row()){
+		echo "".$fila[];
+	}
+}
+
+--------------------------
